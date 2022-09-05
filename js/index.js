@@ -158,7 +158,7 @@
             })
             $(".animal>img").attr("src", src);
             $(".up").css({
-                "background": "url(../images/animals/back" + sNum + ".jpg)",
+                "background": "url(/images/animals/back" + sNum + ".jpg)",
                 "background-size": 100 + "%"
             }).fadeIn(500);
         })
