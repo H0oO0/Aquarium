@@ -158,7 +158,7 @@
             })
             $(".animal>img").attr("src", src);
             $(".up").css({
-                "background": "url(../images/animals/back" + sNum + ".jpg)",
+                "background": "url(images/animals/back" + sNum + ".jpg)",
                 "background-size": 100 + "%"
             }).fadeIn(500);
         })
@@ -166,10 +166,10 @@
 
         $(".animal_right").click(function () {
 
-            var src2 = "../images/animals/up" + showAnimal + ".png";
+            var src2 = "images/animals/up" + showAnimal + ".png";
 
             $(".up").css({
-                "background": "url(../images/animals/back" + showAnimal + ".jpg)",
+                "background": "url(images/animals/back" + showAnimal + ".jpg)",
                 "background-size": 100 + "%"
             });
             $(".animal>img").attr("src", src2);
@@ -181,10 +181,10 @@
         })
         $(".animal_left").click(function () {
 
-            var src2 = "../images/animals/up" + showAnimal + ".png";
+            var src2 = "images/animals/up" + showAnimal + ".png";
 
             $(".up").css({
-                "background": "url(../images/animals/back" + showAnimal + ".jpg)",
+                "background": "url(images/animals/back" + showAnimal + ".jpg)",
                 "background-size": 100 + "%"
             });
             $(".animal>img").attr("src", src2);
