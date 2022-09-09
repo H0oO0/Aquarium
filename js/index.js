@@ -158,14 +158,40 @@
             })
             $(".animal>img").attr("src", src);
             $(".up").css({
-                "background": "url(images/animals/back" + sNum + ".jpg)",
+                "background": "url(../images/animals/back" + sNum + ".jpg)",
                 "background-size": 100 + "%"
             }).fadeIn(500);
         })
         var showAnimal = 0;
 
-      
-    })
+        $(".animal_right").click(function () {
 
-    
-    
+            var src2 = "../images/animals/up" + showAnimal + ".png";
+
+            $(".up").css({
+                "background": "url(../images/animals/back" + showAnimal + ".jpg)",
+                "background-size": 100 + "%"
+            });
+            $(".animal>img").attr("src", src2);
+            showAnimal++;
+            if (showAnimal > 6) {
+                showAnimal = 0;
+            }
+
+        })
+        $(".animal_left").click(function () {
+
+            var src2 = "../images/animals/up" + showAnimal + ".png";
+
+            $(".up").css({
+                "background": "url(../images/animals/back" + showAnimal + ".jpg)",
+                "background-size": 100 + "%"
+            });
+            $(".animal>img").attr("src", src2);
+            showAnimal--;
+            if (showAnimal == -1) {
+                showAnimal = 6;
+            }
+
+        })
+    })
