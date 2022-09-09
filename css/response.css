@@ -7,6 +7,10 @@
 /* ipad ~1260 */
 @media screen and (max-width:1265px){
     html{font-size: 90%;}
+    /* 없애기 */
+    
+    /* 보이기 */
+
     /* 100% */
     .ticket_left{ height: 35vw; top: 30px;}
 }
@@ -36,6 +40,7 @@
 @media screen and (max-width:780px){
     html{font-size: 50%;}
     /* 없애기 */
+    /* #nav{position: fixed; right: -100%;} */
     .right_animal>.animal_ex p,
     .right_animal>.animal_ex h3,
     .right_animal .animals,
@@ -60,6 +65,7 @@
     .ticketWrap>h2{top: -10rem;}
     .animalWrap{margin-bottom: 35rem;}
     .animalWrap>.innerBox{width: 60%;}
+    /* .animalWrap>h2{top: -21.25rem;} */
     .animal_both{display: block;height: 55.75rem; overflow: visible;}
     .left_animal>.up{height: 35vh;width: 35vh;left: 53%;transform: translateX(-52%); top: -1.1rem;}
     .left_animal>.under{left: 25%; height: 32.8125rem;height: 35vh; width: 35vh;}
@@ -74,6 +80,14 @@
     .left_animal>.up{width: 40vw; height: 40vw;background-size: 100%; top: -1.5rem;}
     .left_animal>.under{ width: 40vw;  height: 40vw; left: 22%;}
     .left_animal .animal{width: 100%;top: 6.375rem;right: -30%;}
+    /* .right_animal .animals .active{width: 10vw;height: 10vw; left: 2rem; bottom: 1rem;} */
+    /* .right_animal .animals>li:first-child{width: 16vw;height: auto;}
+    .right_animal .animals>li:nth-child(2){width: 16vw;height: auto;}
+    .right_animal .animals>li:nth-child(3){width: 16vw;height: auto;}
+    .right_animal .animals>li:nth-child(4){width: 16vw;height: auto;}
+    .right_animal .animals>li:nth-child(5){width: 16vw;height: auto;}
+    .right_animal .animals>li:nth-child(6){width: 16vw;height: auto;}
+    .right_animal .animals>li:last-child{width: 13vw;height: auto;} */
     .pagerWrap{width: 45vw;}
     .zoneWrap{margin-bottom:20rem; }
     .animalWrap{margin-bottom: 18rem};
@@ -96,6 +110,8 @@
     .reviewWrap>h2{top: -10rem;}
     .ticketWrap>h2{top: -10rem;}
     .animalArrow>li{ top: 18%;}
+    /* .right_animal .more>a{font-size: 12px;}
+    .right_animal .animals .active{left: 1.5rem;} */
     .ticket_both{display: block;}
     .ticket_left{display: none;}
     .ticket_right{margin-left: 50%; transform: translateX(-50%); border: 2px solid #fff; padding: 20px 10px; text-align: center; width: 55vw;}
