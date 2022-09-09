@@ -34,110 +34,41 @@
     })
 
     //ZONE
-    $(function () {
-        var showBanner = 0;
+     $(function () {
 
-        //배너 복사하기
-        var objFirst = $(".zone>li:lt(3)").clone();
-        var objLast = $(".zone>li:gt(3)").clone();
-        $(".zone").append(objFirst);
-        $(".zone").prepend(objLast);
+        $(".zone").slick({
+            centerMode: true,
+            slidesToShow: 5,
+            slidesToScroll: 1,
+            responsive: [
+                {
+                    breakpoint: 780,
+                    settings: {
+                        slidesToShow: 3,
+                        slidesToScroll: 1
+                    }
+                },
+                {
+                    breakpoint: 450,
+                    settings: {
+                        centerMode: false,
+                        slidesToShow: 3,
+                        slidesToScroll: 1
+                    }
+                },
+                {
+                    breakpoint: 390,
+                    settings: {
+                        centerMode: false,
+                        slidesToShow: 2,
+                        slidesToScroll: 1
+                    }
+                }
+            ]
 
-
-
-        var wWidth = $(window).outerWidth();
-
-        $(window).resize(function () {
-            wWidth = $(window).outerWidth();
         })
-
-        if (wWidth > 450) {
-            $(".zone>li").eq(showBanner + 2).addClass("active")
-        } else {
-            $(".zone>li").eq(showBanner + 2).removeClass("active")
-        }
-
-        $(".right_arrow").click(function () {
-            if (wWidth > 450) {
- 
-            
-                if (showBanner < 7) {
-                $(".zone").stop().animate({
-                    "left": -showBanner * 20 + "%"
-                }, 500);
-                showBanner++;
-                $(".zone>li").eq(showBanner + 1).addClass("active").siblings().removeClass("active");
-               
-                } else{
-                    
-                    showBanner = 0;
-                    $(".zone").css("left",0);
-                    $(".zone>li").eq(2).addClass("active").siblings().removeClass("active");
-                }
-            } else {
-             
-           
-                if (showBanner <7) {
-                    $(".zone").stop().animate({
-                        "left": -showBanner * 33.3333 + "%"
-                    }, 500);
-                   
-                }
-                
-            
-             else{
-                showBanner=0
-                $(".zone").css("left",0);
-             }
-            
-             showBanner++;
-            }
-
-         
-            console.log(showBanner)
-     
-        })
-        
-        $(".left_arrow").click(function () {
-            if (wWidth > 450) {
- 
-                
-                if (showBanner <1) {
-                    showBanner=6;
-                    $(".zone").css("left", -showBanner * 20 + "%");
-              
-              
-                $(".zone>li").eq(showBanner + 2).addClass("active").siblings().removeClass("active");
-               
-                } else{
-                    
-                    showBanner--;
-                    $(".zone").stop().animate({
-                        "left": -showBanner * 20 + "%"
-                    }, 500);;
-                    
-                     $(".zone>li").eq(showBanner+2).addClass("active").siblings().removeClass("active");
-                }
-            } else {
-                if (showBanner <1) {
-                    showBanner=7;
-                    $(".zone").css("left", -showBanner * 33.333333 + "%");
-                }
-                showBanner--;
-                $(".zone").stop().animate({
-                    "left": -showBanner * 33.3333 + "%"
-                }, 500);
-                
-                
-            }
-
-         
-            console.log(showBanner)
-     
-        })
-
     })
-
+  
     //Animals
     $(function () {
 
